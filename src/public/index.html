@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-stroke"></div>
+
+    <section class="container">
+
+        <form name="form_user" id="form_username" class="input-container input-username">
+            <input type="text" id="inputMessage" placeholder="Digite seu nome de usuário" class="inputMessage username" name="username" autocomplete="off">
+            <button type="submit"><img src="assets/img/send.svg" alt="send" class="icon send" aria-hidden="true"></button>
+        </form>
+
+        <div class="rooms-container">
+            <div class="rooms-title">Salas</div>
+            <div class="room">
+                <span>Sala de Danilo</span>
+                <button>Entrar</button>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="chat-title">Sala de Danilo</div>
+            <div class="chat-info">
+                <p>Link do projeto:</p>
+                <p>Divirta-se :)</p>
+            </div>
+
+            <div id = "messages" class="messages">
+                
+            </div>
+
+            <form name="form_name" id="form_message" class="input-container">
+                <img src="assets/img/anexo.svg" alt="anex" class="icon anex">
+                <input type="text" id="inputMessage" placeholder="Digite algo..." class="inputMessage" name="msg" autocomplete="off">
+                <button type="submit" style="display: hidden;"><img src="assets/img/send.svg" alt="send" class="icon send" aria-hidden="true"></button>
+            </form>
+        </div>
+
+        <div class="members">
+            <div class="members-container" id="members">
+                <div class="members-title">Membros</div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
