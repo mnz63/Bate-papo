@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body {
+    background: url('./assets/img/1.png');
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-stroke {
+    content: " ";
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh - 81px);
+    display: flex;
+}
+
+.rooms-container, .members-container{
+    display: flex;
+    flex-direction: column;
+    width: 535px;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+}
+
+.rooms-title {
+    font-size: 20px;
+    width: 110px;
+    height: 40px;
+    background: rgba(131, 131, 131, 0.3);
+    border-radius: 15px;
+    margin-top: 33px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.room{
+    display: flex;
+    flex-direction: column;
+    width: 413px;
+    height: 139px;
+    background: rgba(131, 131, 131, 0.3);
+    border-radius: 15px;
+    margin-top: 58px;
+    padding: 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.room span{
+    font-size: 32px;
+}
+
+.room button {
+    margin-top: 20px;
+    width: 118px;
+    height: 40px;
+    background: #8000FF;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.room button:hover {
+    background: #430185;
+}
+
+
+.chat{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    height: 100%;
+}
+
+.chat-title {
+    align-self: flex-start;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 51px;
+}
+
+.chat-info{
+    display: flex;
+    flex-direction: column;
+    width: 745px;
+    height: 105px;
+    background: rgba(128, 0, 255, 0.3);
+    border-radius: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.chat-info p{
+    margin: 0px 0px 7px 21px;
+}
+
+.inputMessage {
+    width: 100%;
+    height: 100%;
+    background: rgba(131, 131, 131, 0.5);
+    border-radius: 20px;
+    border: none;
+    padding: 18px 55px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.inputMessage::placeholder{
+    font-size: 20px;
+}
+
+.inputMessage:focus, input:hover {
+    outline-color: rgb(98, 0, 255);
+    box-shadow: -3px -3px 15px rgb(98, 0, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+
+.icon{
+    position: absolute;
+    width: 22px;
+    cursor: pointer;
+}
+
+.anex {
+    left: 20px;
+    top: 15px;
+}
+
+.send {
+    right: 20px;
+    top: 19px;
+}
+
+.input-container {
+    position: absolute;
+    display: flex;
+    bottom: 35px;
+    width: 730px;
+    height: 59px;
+}
+
+.messages {
+    position: absolute;
+    width: 735px;
+    height: 500px;
+    left: 57px;
+    top: 280px;
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+.message{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 50px;
+    max-height: 100%;
+    margin-bottom: 10px;
+    
+}
+
+button{
+    border: none;
+}
+
+.profile-img{
+    max-width: 48px;
+}
+
+.received {
+    flex-direction: row;
+    
+}
+
+.content-message{
+    min-width: 250px;
+    min-height: 50px;
+    max-height: 100%;
+    background: #8000FF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.received-message {
+    margin-left: 14px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.members{
+    display: flex;
+    width: 535px;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.members-title {
+    width: 155px;
+    height: 40px;
+    font-size: 20px;
+    background: rgba(131, 131, 131, 0.3);
+    border-radius: 15px;
+    margin-top: 33px;
+    margin-bottom: 58px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.member{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 534px;
+    height: 94px;
+    background: linear-gradient(90deg, rgba(128, 0, 255, 0.3) 0%, rgba(128, 0, 255, 0) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+}
+
+.member span {
+    margin-left: 36px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 15px;
+}
+
+.input-username {
+    position: absolute;
+    display: flex;
+    top: 12px;
+    left: 61px;
+    width: 413px;
+    height: 59px;
+}
+
+.username{
+    width: 413px;
+    height: 59px;
+}
