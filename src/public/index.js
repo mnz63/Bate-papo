@@ -1,4 +1,4 @@
-const socket = io('http://localhost:5000')
+const socket = io('https://my-chat-online.herokuapp.com/')
 let user = '';
 
 
