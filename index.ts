@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors())
-app.use('/chat', express.static(path.join(__dirname, 'src/public')))
+app.use('/', express.static(path.join(__dirname, 'src/public')))
 
 
 const server = app.listen(PORT, ()=>{
