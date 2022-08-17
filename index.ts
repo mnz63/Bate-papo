@@ -9,6 +9,10 @@ const PORT = 5000;
 app.use(cors())
 app.use('/', express.static(path.join(__dirname, 'src/public')))
 
+app.get('/', (req, res) => {
+    res.send('ok')
+})
+
 const server = app.listen(PORT, ()=>{
     console.log('listening on port ' + PORT);
 });
