@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         const message = document.forms['form_name']['msg'].value;
         document.forms['form_name']['msg'].value = '';
         socket.emit('sent_message', {user: user, msg: message});
-        console.log(message);
     })
 
     userform.addEventListener('submit',(e)=>{
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded',()=>{
             return
         }
         socket.emit('create_user', {user: user});
-        console.log(user);
         userform.parentNode.removeChild(userform);
     })
 })
