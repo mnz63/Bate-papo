@@ -11,6 +11,11 @@ socket.on('update_users', (users)=>{
     updateMembers(users)
 })
 
+window.setInterval(function() {
+    var elem = document.getElementById('messages');
+    elem.scrollTop = elem.scrollHeight;
+  }, 100);
+
 
 document.addEventListener('DOMContentLoaded',()=>{
     const form = document.getElementById('form_message');
